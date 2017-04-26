@@ -26,9 +26,11 @@ La balise *<Niveau>* contient les différentes questions qui appartiennent à ce
   - id : qui permet d'identifier le niveau
   - nom : qui contient le nom du niveau (CP, CE1, CE2, ...)
   - temps : c'est le temps dont dispose l'élève pour chaque question de ce niveau.
+  
 La balise *<Question>* contient la question ainsi que les propositions de réponse.  
   - texte : contient la question
-  - nbProposition : contient le nombre de réponses (fausses ou vraies) que contient la question  
+  - nbProposition : contient le nombre de réponses (fausses ou vraies) que contient la question
+  
 La balise *<Proposition>* contient une proposition  
   - id : identifiant de la proposition
   - texte : contient le texte de la réponse/proposition
