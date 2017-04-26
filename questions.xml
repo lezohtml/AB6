@@ -1,0 +1,140 @@
+
+<Niveau id="1" nom="CP" temps="20"> 
+    <Question texte="5 + 4 " nbProposition="2">
+        <Proposition id="1" texte="54" vrai="0">
+        <Proposition id="2" texte="9" vrai="1">
+    </Question>
+    <Question texte="4 est plus grand de 6 " nbProposition="2">
+        <Proposition id="1" texte="Lancer" vrai="0">
+        <Proposition id="2" texte="Carotte" vrai="1">
+    </Question>
+    <Question texte="Complète : ... lance de pompier " nbProposition="2">
+        <Proposition id="1" texte="le" vrai="0">
+        <Proposition id="2" texte="la" vrai="1">
+    </Question>
+    <Question texte="Complète : A B C D E F G ... I " nbProposition="3">
+    	<Proposition id="1" texte="J" vrai="0">
+        <Proposition id="2" texte="H" vrai="1">
+        <Proposition id="3" texte="K" vrai="0">
+    </Question>
+    <Question texte="Complète : Mardi Mercredi ... Vendredi " nbProposition="3">
+    	<Proposition id="1" texte="Samedi" vrai="0">
+        <Proposition id="2" texte="Lundi" vrai="0">
+        <Proposition id="3" texte="Jeudi" vrai="1">
+    </Question>
+    <Question texte="Quel est le contraire de Gentil " nbProposition="3">
+    	<Proposition id="1" texte="Mechant" vrai="1">
+        <Proposition id="2" texte="Pas gentil" vrai="0">
+        <Proposition id="3" texte="Mèche" vrai="0">
+    </Question>
+    <Question texte="Quel est le contraire de Vieux " nbProposition="3">
+    	<Proposition id="1" texte="Jaune" vrai="0">
+        <Proposition id="2" texte="Jeune" vrai="1">
+        <Proposition id="3" texte="Geune" vrai="0">
+    </Question>
+</Niveau>
+<Niveau id="2" nom="CE1" temps="17">
+	<Question texte="Lequel de ces mots est un verbe ?" nbProposition="3">
+        <Proposition id="1" texte="Lancer" vrai="1">
+        <Proposition id="2" texte="Carotte" vrai="0">
+        <Proposition id="3" texte="Voiture" vrai="0">
+    </Question>
+    <Question texte="14 + 7 " nbProposition="3">
+        <Proposition id="1" texte="20" vrai="0">
+        <Proposition id="2" texte="21" vrai="1">
+        <Proposition id="3" texte="19" vrai="0">
+    </Question>
+    <Question texte="4 * 4 " nbProposition="3">
+        <Proposition id="1" texte="14" vrai="0">
+        <Proposition id="2" texte="8" vrai="0">
+        <Proposition id="3" texte="16" vrai="1">
+    </Question>
+    <Question texte="Complète : J'... faim ! " nbProposition="3">
+        <Proposition id="1" texte="ai" vrai="1">
+        <Proposition id="2" texte="a" vrai="0">
+        <Proposition id="3" texte="est" vrai="0">
+    </Question>
+    <Question texte="Trouve le nom : La baignoire est dans la salle de bain. " nbProposition="3">
+        <Proposition id="1" texte="salle de bain" vrai="0">
+        <Proposition id="2" texte="baignoire" vrai="1">
+        <Proposition id="3" texte="dans" vrai="0">
+    </Question>
+</Niveau>
+<Niveau id="3" nom="CE2" temps="14">
+	<Question texte="Ecrire en chiffres : deux cents." nbProposition="3">
+        <Proposition id="1" texte="100" vrai="0">
+        <Proposition id="2" texte="200" vrai="1">
+        <Proposition id="3" texte="2100" vrai="0">
+    </Question>
+    <Question texte="Résoudre : 62 * 1000" nbProposition="3">
+        <Proposition id="1" texte="62000" vrai="1">
+        <Proposition id="2" texte="620" vrai="0">
+        <Proposition id="3" texte="6200" vrai="0">
+    </Question>
+    <Question texte="Complète : Tu ne ... pas le chat par la fenêtre !" nbProposition="3">
+        <Proposition id="1" texte="jettera" vrai="0">
+        <Proposition id="2" texte="jeteras" vrai="0">
+        <Proposition id="3" texte="jetteras" vrai="1">
+    </Question>
+    <Question texte="Complète : Il ... à ses amis demain." nbProposition="3">
+        <Proposition id="1" texte="parlera" vrai="1">
+        <Proposition id="2" texte="parlerait" vrai="0">
+        <Proposition id="3" texte="parleras" vrai="0">
+    </Question>
+</Niveau>
+<Niveau id="4" nom="CM1" temps="11">
+	<Question texte="J'ai 9 diamants, je dois les partager en 3. Combien chaque personne aura de diamants ?" nbProposition="3">
+        <Proposition id="1" texte="3" vrai="1">
+        <Proposition id="2" texte="2" vrai="0">
+    </Question>
+    <Question texte="Complète : Il ... à ses amis demain." nbProposition="3">
+        <Proposition id="1" texte="parlera" vrai="1">
+        <Proposition id="2" texte="parlerait" vrai="0">
+        <Proposition id="3" texte="parleras" vrai="0">
+    </Question>
+    <Question texte="Complète : As-tu vu les 2 ... dans l'arbre ? " nbProposition="3">
+        <Proposition id="1" texte="hibou" vrai="0">
+        <Proposition id="2" texte="hiboux" vrai="1">
+        <Proposition id="3" texte="hibous" vrai="0">
+    </Question>
+    <Question texte="Complète : Attention aux ... ! " nbProposition="3">
+        <Proposition id="1" texte="caillou" vrai="0">
+        <Proposition id="2" texte="caillous" vrai="0">
+        <Proposition id="3" texte="cailloux" vrai="1">
+    </Question>
+    <Question texte="J'ai 13 diamants, je dois les partager en 4. Combien chaque personne aura de diamants ?" nbProposition="3">
+        <Proposition id="1" texte="3" vrai="0">
+        <Proposition id="2" texte="4" vrai="0">
+        <Proposition id="3" texte="Ce n'est pas équitable" vrai="1">
+    </Question>
+</Niveau>
+<Niveau id="5" nom="CM2" temps="10">
+	<Question texte="Complète : J'ai ... des sauterelles." nbProposition="3">
+        <Proposition id="1" texte="attrapé" vrai="1">
+        <Proposition id="2" texte="attrapait" vrai="0">
+        <Proposition id="3" texte="atrappé" vrai="0">
+    </Question>
+    <Question texte="Complète : Il ... ses amis hier." nbProposition="3">
+        <Proposition id="1" texte="voyait" vrai="1">
+        <Proposition id="2" texte="voyais" vrai="0">
+        <Proposition id="3" texte="voyez" vrai="0">
+    </Question>
+    <Question texte="24 / 2 " nbProposition="2">
+        <Proposition id="1" texte="12" vrai="1">
+        <Proposition id="2" texte="14" vrai="0">
+    </Question>
+    <Question texte="Complète : ... est votre chaise ? " nbProposition="3">
+        <Proposition id="1" texte="Quel" vrai="0">
+        <Proposition id="2" texte="Qu'elle" vrai="0">
+        <Proposition id="3" texte="Quelle" vrai="1">
+    </Question>
+    <Question texte="Qui fut appelé le roi Soleil ?" nbProposition="3">
+        <Proposition id="1" texte="Clovis" vrai="0">
+        <Proposition id="2" texte="Louis XVI" vrai="0">
+        <Proposition id="3" texte="Louis XIV" vrai="1">
+    </Question>
+    <Question texte="En quelle année s'est passée la bataille d'Alésia ?" nbProposition="2">
+        <Proposition id="1" texte="52" vrai="0">
+        <Proposition id="2" texte="-52" vrai="1">
+    </Question>
+</Niveau>
