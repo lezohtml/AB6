@@ -1,0 +1,14 @@
+Un fichier par XML (tous les niveaux dans ce fichier)
+Lecture du fichier xml --> parse dse niveaux et des questions
+Nombre de vie (10 vies) --> si on perd -1
+Timer en fonction du niveau (XML)
+
+<Niveau id="1" nom="CE1" temps="10" >
+    <Question texte="fdnjdsjnfsjdfn ?" nbProposition="2">
+        <Proposition id="1" texte="Reponse 1" vrai="1">
+        <Proposition id="2" texte="Reponse 2" vrai="0">
+    </Question>
+</Niveau>
+
+Menu : choix du niveau - quitter - recommencer - question ++
+
