@@ -16,6 +16,10 @@ public class AB6 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        GestionFichier b = new GestionFichier();
+        Niveau n =  b.chargementQuestions("CP");
+        n.getListeQuestion();
     }
     
 }
