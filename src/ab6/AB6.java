@@ -5,6 +5,8 @@
  */
 package ab6;
 
+import vue.fenetre;
+
 /**
  *
  * @author norman
@@ -20,6 +22,7 @@ public class AB6 {
         GestionFichier b = new GestionFichier();
         Niveau n =  b.chargementQuestions("CP");
         n.getListeQuestion();
+        fenetre f = new fenetre();
     }
     
 }
