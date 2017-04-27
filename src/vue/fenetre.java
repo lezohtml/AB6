@@ -6,10 +6,12 @@
 package vue;
 
 import java.awt.Dimension;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.BorderFactory;
 import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -18,6 +20,7 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JProgressBar;
 import javax.swing.border.Border;
 import javax.swing.border.EtchedBorder;
 
@@ -39,13 +42,17 @@ public class fenetre extends JFrame{
 	 private JButton JLouest;
 	 private JLabel JLcentre;
 	 private Icon image;
-	 private JButton JLest;
+	 private JLabel JLest, JLest2 ,JLest3 ,JLest4;
 	 private JPanel pan2;
 	 private JButton JL, JL2, JL3, JL4;
 	 private JPanel pan4;
+         
+      JProgressBar current = new JProgressBar(0, 10000);
+      int num = 0;
+         
 	 
 	public fenetre() {
-    	this.setTitle("Reigns");
+    	this.setTitle("AB6");
 		this.setSize(1100, 650);
 	    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	    this.setLocationRelativeTo(null);  
@@ -81,31 +88,60 @@ public class fenetre extends JFrame{
 	    JLcentre = new JLabel();
 	    JLcentre.setPreferredSize(new Dimension(600, 300));
 	    JLcentre.setBorder(loweredetched);
-	    
-	    pan3.add(JLcentre);
+            
+             current.setValue(0);
+             current.setStringPainted(true);
+  
+//	    JButton image = new JButton("test");
+//            image.setPreferredSize(new Dimension(100, 200));
+//            JLcentre.add(image);
+	    pan3.add(current);
 	    
 	    //Est
             
+
+	    JLest = new JLabel();
+	    JLest.setPreferredSize(new Dimension(80, 100));
+            JLest2 = new JLabel();
+	    JLest2.setPreferredSize(new Dimension(80, 100));
+            JLest3 = new JLabel();
+	    JLest3.setPreferredSize(new Dimension(80, 100));
+            JLest4 = new JLabel();
+	    JLest4.setPreferredSize(new Dimension(80, 100));
             
-          
-                
-	    JLest = new JButton();
-//	    JLest.setPreferredSize(new Dimension(300, 300));
-//             ImageIcon imageIcon = new ImageIcon( "coeur.jpg" );
-//		Image image = imageIcon.getImage(); // transform it 
-//		Image newimg = image.getScaledInstance(100, 150,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
-//		imageIcon = new ImageIcon(newimg);
-//		JLest.setIcon(imageIcon);
-//                
-//                        JLabel image = new JLabel( new ImageIcon( "coeur.jpg"));
-//           //JButton image = new JButton("test");
-//            image.setPreferredSize(new Dimension(100, 200));
-//            JLest.add(image);
+
+            ImageIcon image = new ImageIcon( "C:/Users/pc_achoura/Documents/NetBeansProjects/AB_6/AB6/src/vue/coeur.jpg"); // Tu créer ton objet ImageIcon comme tu veux
+            image = new ImageIcon(image.getImage().getScaledInstance(50, 50, java.awt.Image.SCALE_SMOOTH));
+            JLest.setText(null);
+            JLest.setIcon(image);
+
+
+            ImageIcon image2 = new ImageIcon( "C:/Users/pc_achoura/Documents/NetBeansProjects/AB_6/AB6/src/vue/coeur.jpg"); // Tu créer ton objet ImageIcon comme tu veux
+            image2 = new ImageIcon(image2.getImage().getScaledInstance(50, 50, java.awt.Image.SCALE_SMOOTH));
+            JLest2.setText(null);
+            JLest2.setIcon(image2);
+
+
+            ImageIcon image3 = new ImageIcon( "C:/Users/pc_achoura/Documents/NetBeansProjects/AB_6/AB6/src/vue/coeur.jpg"); // Tu créer ton objet ImageIcon comme tu veux
+            image3 = new ImageIcon(image3.getImage().getScaledInstance(50, 50, java.awt.Image.SCALE_SMOOTH));
+            JLest3.setText(null);
+            JLest3.setIcon(image2);
+
+            ImageIcon image4 = new ImageIcon( "C:/Users/pc_achoura/Documents/NetBeansProjects/AB_6/AB6/src/vue/coeur.jpg"); // Tu créer ton objet ImageIcon comme tu veux
+            image4 = new ImageIcon(image4.getImage().getScaledInstance(50, 50, java.awt.Image.SCALE_SMOOTH));
+            JLest4.setText(null);
+            JLest4.setIcon(image2);
+
+
+
+
+
 	    pan3.add(JLest);
-	    
+	    pan3.add(JLest2);
+            pan3.add(JLest3);
+            pan3.add(JLest4);
 		  //Sud
                   
-	    pan1.add(BtnN1);
             
 	    pan2 = new JPanel();
 	    pan2.setPreferredSize(new Dimension(960, 110));
@@ -139,7 +175,7 @@ public class fenetre extends JFrame{
 		{
 			public void actionPerformed(ActionEvent e) 
 			{
-					
+                          	
 			}
 
                
@@ -160,4 +196,17 @@ public class fenetre extends JFrame{
 	    this.getContentPane().add(pan4);
 	    this.setVisible(true);
 	}
+        
+        
+        public void iterate() {
+        for(int val = 0; val <= 5000; val++){
+           current.setValue(num);
+           try {
+             Thread.sleep(500);
+           } catch (InterruptedException e) {
+           }
+           num += 100;
+         }
+        
+        }
 }

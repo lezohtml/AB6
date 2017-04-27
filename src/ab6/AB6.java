@@ -23,6 +23,8 @@ public class AB6 {
         Niveau n =  b.chargementQuestions("CP");
         n.getListeQuestion();
         fenetre f = new fenetre();
+        f.pack();
+        f.iterate();
     }
     
 }
