@@ -1,0 +1,7 @@
+Code a faire:
+3 methodes vue : Afficher une question avec ces propositions
+				 Enlever une vie
+				 Afficher winner
+Controlleur: for each questions, reception vrai faux, envoyer winner !
+Donnée : getQuestions
+		 getPropositions
