@@ -5,6 +5,7 @@
  */
 package ab6;
 
+import control.Controlleur;
 import vue.fenetre;
 
 /**
@@ -19,12 +20,7 @@ public class AB6 {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        GestionFichier b = new GestionFichier();
-        Niveau n =  b.chargementQuestions("CP");
-        n.getListeQuestion();
-        fenetre f = new fenetre();
-        f.pack();
-        f.iterate();
+       Controlleur nn = new  Controlleur();
     }
     
 }

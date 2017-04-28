@@ -5,6 +5,7 @@
  */
 package vue;
 
+import ab6.Question;
 import java.awt.Dimension;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
@@ -110,24 +111,24 @@ public class fenetre extends JFrame{
 	    JLest4.setPreferredSize(new Dimension(80, 100));
             
 
-            ImageIcon image = new ImageIcon( "C:/Users/pc_achoura/Documents/NetBeansProjects/AB_6/AB6/src/vue/coeur.jpg"); // Tu créer ton objet ImageIcon comme tu veux
+            ImageIcon image = new ImageIcon( "src/vue/coeur.jpg"); // Tu créer ton objet ImageIcon comme tu veux
             image = new ImageIcon(image.getImage().getScaledInstance(50, 50, java.awt.Image.SCALE_SMOOTH));
             JLest.setText(null);
             JLest.setIcon(image);
 
 
-            ImageIcon image2 = new ImageIcon( "C:/Users/pc_achoura/Documents/NetBeansProjects/AB_6/AB6/src/vue/coeur.jpg"); // Tu créer ton objet ImageIcon comme tu veux
+            ImageIcon image2 = new ImageIcon( "src/vue/coeur.jpg"); // Tu créer ton objet ImageIcon comme tu veux
             image2 = new ImageIcon(image2.getImage().getScaledInstance(50, 50, java.awt.Image.SCALE_SMOOTH));
             JLest2.setText(null);
             JLest2.setIcon(image2);
 
 
-            ImageIcon image3 = new ImageIcon( "C:/Users/pc_achoura/Documents/NetBeansProjects/AB_6/AB6/src/vue/coeur.jpg"); // Tu créer ton objet ImageIcon comme tu veux
+            ImageIcon image3 = new ImageIcon( "src/vue/coeur.jpg"); // Tu créer ton objet ImageIcon comme tu veux
             image3 = new ImageIcon(image3.getImage().getScaledInstance(50, 50, java.awt.Image.SCALE_SMOOTH));
             JLest3.setText(null);
             JLest3.setIcon(image2);
 
-            ImageIcon image4 = new ImageIcon( "C:/Users/pc_achoura/Documents/NetBeansProjects/AB_6/AB6/src/vue/coeur.jpg"); // Tu créer ton objet ImageIcon comme tu veux
+            ImageIcon image4 = new ImageIcon( "src/vue/coeur.jpg"); // Tu créer ton objet ImageIcon comme tu veux
             image4 = new ImageIcon(image4.getImage().getScaledInstance(50, 50, java.awt.Image.SCALE_SMOOTH));
             JLest4.setText(null);
             JLest4.setIcon(image2);
@@ -157,6 +158,8 @@ public class fenetre extends JFrame{
             JL4 = new JButton("proposition");
 	    JL4.setPreferredSize(new Dimension(230, 100));
 	    JL4.setBorder(loweredetched);
+            JL4.setName("bob");
+            System.out.println(JL4.getName());
 	    pan2.add(JL);
             pan2.add(JL2);
             pan2.add(JL3);
@@ -209,4 +212,19 @@ public class fenetre extends JFrame{
          }
         
         }
+
+        
+        //Permet D'afficher la Question avec ces propositions
+    public void affichageQuestion(Question get) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    
+    //Affiche la victoire pour l'utilisateur
+    public void afficherVictoire() {
+JOptionPane.showMessageDialog(this, "ictoire !");    }
+
+    public void supprimeVie() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
