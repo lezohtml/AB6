@@ -21,6 +21,7 @@ public class AB6 {
         // TODO code application logic here
         
        Controlleur nn = new  Controlleur();
+       fenetre ff = new fenetre(nn);
     }
     
 }

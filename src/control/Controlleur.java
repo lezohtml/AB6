@@ -7,6 +7,7 @@ package control;
 
 import ab6.GestionFichier;
 import ab6.Niveau;
+import ab6.Question;
 import java.util.ArrayList;
 import java.util.Iterator;
 import vue.fenetre;
@@ -16,7 +17,6 @@ import vue.fenetre;
  * @author norman
  */
 public class Controlleur {
-    private fenetre f;
     private Niveau n;
     
      
@@ -24,33 +24,28 @@ public class Controlleur {
         GestionFichier b = new GestionFichier();
         n =  b.chargementQuestions("CP");
         n.getListeQuestion();
-        f = new fenetre();
-        f.pack();
-       // f.iterate();
     }
     
     
-    public void envoiQuestion(){
+    public Question getQuestion(){
+        Question q = null;
         if(!n.getListeQuestion().isEmpty()){ //Si la liste n'est pas vide on affiche la prochaine question sinon on affiche la victoire !
              //Envoi vers la vue la question 
-             f.affichageQuestion(n.getListeQuestion().get(0));
+             q =  n.getListeQuestion().get(0);
         n.getListeQuestion().remove(0); //Supprime l'element envoyer
         }
-        else{
-           //Afficher la victoire car il n'y a plus de question
-           f.afficherVictoire();
-        }
+        return q;
     }
     
     
-    public void receptionResultat(boolean choix){
+    public boolean receptionResultat(boolean choix){
         if(choix){
             //Possibilité d'aficher "bravo"
-            envoiQuestion();  //Passe à la prochaine question
+            return true;  //Passe à la prochaine question
         }
         else{
            //Envoi a la fenetre une vie en moins: 
-           f.supprimeVie();
+           return false;
         }
     }
 }
