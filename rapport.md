@@ -41,6 +41,16 @@ Les questions ainsi que les niveaux peuvent tout aussi bien être rentrées dans
 ### La lecture du fichier XML
 
 ### Le design 
+Le design est composé de 4 JPanel:
+    -Un pour le nord
+    -Un pour le centre
+    -Un pour le sud
+    -Un qui transforme
+    
+Le JPanel du Nord contiendra un JLabel pour la question.
+Au milieu le JPanel contiendra la progresse bar avec le temps laisser à l’enfant pour répondre, et qui contient  plusieurs JLabel qui permettront de voir le nombre de vies restantes.
+Le JPanel au Sud contiendra  4 JButton qui sont les plusieurs propositions de réponse, une seule est correcte.
+Le dernier JPanel permettra de disposer c’est ligne en colonne.
 
 
 ## L'évolution :
