@@ -42,10 +42,10 @@ Les questions ainsi que les niveaux peuvent tout aussi bien être rentrées dans
 
 ### Le design 
 Le design est composé de 4 JPanel:
-    -Un pour le nord
-    -Un pour le centre
-    -Un pour le sud
-    -Un qui transforme
+  - Un pour le nord
+  - Un pour le centre
+  - Un pour le sud
+  - Un qui transforme
     
 Le JPanel du Nord contiendra un JLabel pour la question.
 Au milieu le JPanel contiendra la progresse bar avec le temps laisser à l’enfant pour répondre, et qui contient  plusieurs JLabel qui permettront de voir le nombre de vies restantes.
@@ -57,4 +57,9 @@ Le dernier JPanel permettra de disposer c’est ligne en colonne.
 
 La question qui tombe style Tetris (enlève le timer)
 Faciliter l'ajout de questions pour les professeurs 
+Designe --> Pour l’instant nous avons fait une progresse bar avec un système de vie, dans le futur il faudrait changer cela  pour faire tomber des petits objets qui s’imbriquent (tétris), le temps qui permet à l’objet de descendre pourrait être proportionnelle au niveau de l’enfant.
+Niveau de l’enfant --> dans les progressions nous pensions pouvoir mettre en place un système de niveau, une petite fenêtre s’ouvrirait au lancement de l’application et l’enfant choisirait son niveau, et en fonction de cela, grâce à une propriété mise dans le xml, nous chargerions les questions en fonction du niveau. Si l’enfant veut changer de niveau par la suite, un choix sera possible dans le menu du haut.
+Difficulté --> Si l’enfant retombe sur une même question où il s’est déjà trompé, alors le timer devient un peu plus long pour laisser à l’enfant plus de temps, ou alors, en fonction du souhait  du supérieur, un choix de réponse rétrécie.
+Système de vie --> en fonction du niveau l’enfant peu commencé avec plus ou moins de vie au départ.
+
 
