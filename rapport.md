@@ -8,9 +8,23 @@ Il dispose aussi d'un nombre de temps limité pour répondre à chaque question.
 
 
 ### Choix du Java 
+Je vous laisse faire ici !!!!
 
 ### Modulable :
 Changement des questions / niveaux / temps 
+
+## Mise en place du projet 
+
+### Choix des technologies, moteur :
+
+### Répartition des tâches :
+Il faut ton Gantt ici Nono
+
+### Outils de contribution :
+
+- Git : Git est un outil de versioning qui permet de travailler à plusieurs au développement d'une application.
+
+- Communication : Chat (pour ne pas nommer Facebook)
 
 ## Code :
 
@@ -56,10 +70,13 @@ Le dernier JPanel permettra de disposer c’est ligne en colonne.
 ## L'évolution :
 
 La question qui tombe style Tetris (enlève le timer)
-Faciliter l'ajout de questions pour les professeurs 
-  - Designe --> Pour l’instant nous avons fait une progresse bar avec un système de vie, dans le futur il faudrait changer cela  pour faire tomber des petits objets qui s’imbriquent (tétris), le temps qui permet à l’objet de descendre pourrait être proportionnelle au niveau de l’enfant.
+  - Le sujet imposait un *style Tetris*, les questions doivent "tomber" et l'élève doit répondre avant que la *brique* n'arrive en bas de la zone. 
+  - Design --> Pour l’instant nous avons fait une progress bar avec un système de vie, dans le futur il faudrait changer cela  pour faire tomber des petits objets qui s’imbriquent (tétris), le temps qui permet à l’objet de descendre pourrait être proportionnelle au niveau de l’enfant.
   - Niveau de l’enfant --> dans les progressions nous pensions pouvoir mettre en place un système de niveau, une petite fenêtre s’ouvrirait au lancement de l’application et l’enfant choisirait son niveau, et en fonction de cela, grâce à une propriété mise dans le xml, nous chargerions les questions en fonction du niveau. Si l’enfant veut changer de niveau par la suite, un choix sera possible dans le menu du haut.
   - Difficulté --> Si l’enfant retombe sur une même question où il s’est déjà trompé, alors le timer devient un peu plus long pour laisser à l’enfant plus de temps, ou alors, en fonction du souhait  du supérieur, un choix de réponse rétrécie.
   - Système de vie --> en fonction du niveau l’enfant peu commencé avec plus ou moins de vie au départ.
+  - Contribuer avec des enseignants de tous les niveaux afin de proposer un grand nombre de questions adaptées au niveau de l'élève. Cela nous permet aussi de suivre les programmes officiels de l'Éducation Nationale. Cela peut passer par le système Git afin que chacun puisse publier sous licence libre ses questions. L'enseignant peut aussi créer des questions en rapport avec son programme et ne pas en faire part à la communauté. 
+  - Système d'ajout de questions dans le fichier *questions.xml* avec interface graphique pour faciliter l'ajout. Notre système actuel utilise un système simple d'ajout de questions via le fichier XML qui a un format adapté et facile à la compréhension. Cependant, la tâche peut être difficile pour une personne non expérimentée et une simple erreur de balise ou de formatage peut bloquer la lecture du fichier par AB6.
+  
 
 
