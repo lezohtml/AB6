@@ -12,12 +12,17 @@ package ab6;
 public class Proposition {
     private int id;
     private String texte;
-    private int vrai;
+    private boolean vrai;
 
     public Proposition(int id, String texte, int vrai) {
         this.id = id;
         this.texte = texte;
-        this.vrai = vrai;
+        if(vrai==0){
+            this.vrai=false;
+        }
+        else{
+            this.vrai=true;
+        }
     }
 
     public int getId() {
@@ -36,11 +41,11 @@ public class Proposition {
         this.texte = texte;
     }
 
-    public int getVrai() {
+    public boolean getVrai() {
         return vrai;
     }
 
-    public void setVrai(int vrai) {
+    public void setVrai(boolean vrai) {
         this.vrai = vrai;
     }
     

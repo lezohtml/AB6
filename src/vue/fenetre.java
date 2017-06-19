@@ -5,8 +5,11 @@
 */
 package vue;
 
+import ab6.Proposition;
 import ab6.Question;
 import control.Controlleur;
+import java.awt.BorderLayout;
+import java.awt.Button;
 import java.awt.Dimension;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
@@ -30,7 +33,7 @@ import javax.swing.border.EtchedBorder;
 *
 * @author pc_achoura
 */
-public class fenetre extends JFrame{
+public class fenetre extends JFrame implements ActionListener {
 	private JMenuBar menuBar = new JMenuBar();
 	private JMenu options = new JMenu("options");
 	private JMenuItem item1 = new JMenuItem("relancer");
@@ -57,9 +60,9 @@ public class fenetre extends JFrame{
 	public fenetre(Controlleur control) {
 		this.control = control;
 		this.setTitle("AB6");
-		this.setSize(1100, 650);
+		this.setSize(800, 800);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setLocationRelativeTo(null);
+		this.setLayout(new BorderLayout());
 		
 		//On initialise nos menus
 		this.options.add(item1);
@@ -67,116 +70,9 @@ public class fenetre extends JFrame{
 		this.menuBar.add(options);
 		this.setJMenuBar(menuBar);
 		
-		//dÃ©finition du type de bordure
-		Border loweredetched = BorderFactory.createEtchedBorder(EtchedBorder.LOWERED);
-		
-		//Nord
-		pan1 = new JPanel();
-		pan1.setPreferredSize(new Dimension(970, 100));
-		BtnN1 = new JLabel("ma question");
-		BtnN1.setPreferredSize(new Dimension(480, 100));
-		BtnN1.setBorder(loweredetched);
-		
-		
-		pan1.add(BtnN1);
-		
-		//Milieu
-		pan3 = new JPanel();
-		pan3.setPreferredSize(new Dimension(1000, 300));
-		//
-		//	    //Ouest
-		//	    JLouest = new JButton();
-		//	    JLouest.setPreferredSize(new Dimension(200, 300));
-		//	    pan3.add(JLouest);
-		//Centre
-		JLcentre = new JLabel();
-		JLcentre.setPreferredSize(new Dimension(600, 300));
-		JLcentre.setBorder(loweredetched);
-		
-		current.setValue(0);
-		current.setStringPainted(true);
-		
-		//	    JButton image = new JButton("test");
-		//            image.setPreferredSize(new Dimension(100, 200));
-		//            JLcentre.add(image);
-		pan3.add(current);
-		
-		//Est
-		
-		
-		JLest = new JLabel();
-		JLest.setPreferredSize(new Dimension(80, 100));
-		JLest2 = new JLabel();
-		JLest2.setPreferredSize(new Dimension(80, 100));
-		JLest3 = new JLabel();
-		JLest3.setPreferredSize(new Dimension(80, 100));
-		JLest4 = new JLabel();
-		JLest4.setPreferredSize(new Dimension(80, 100));
-		
-		
-		ImageIcon image = new ImageIcon( "src/vue/coeur.jpg"); // Tu créer ton objet ImageIcon comme tu veux
-		image = new ImageIcon(image.getImage().getScaledInstance(50, 50, java.awt.Image.SCALE_SMOOTH));
-		JLest.setText(null);
-		JLest.setIcon(image);
-		
-		
-		ImageIcon image2 = new ImageIcon( "src/vue/coeur.jpg"); // Tu créer ton objet ImageIcon comme tu veux
-		image2 = new ImageIcon(image2.getImage().getScaledInstance(50, 50, java.awt.Image.SCALE_SMOOTH));
-		JLest2.setText(null);
-		JLest2.setIcon(image2);
-		
-		
-		ImageIcon image3 = new ImageIcon( "src/vue/coeur.jpg"); // Tu créer ton objet ImageIcon comme tu veux
-		image3 = new ImageIcon(image3.getImage().getScaledInstance(50, 50, java.awt.Image.SCALE_SMOOTH));
-		JLest3.setText(null);
-		JLest3.setIcon(image2);
-		
-		ImageIcon image4 = new ImageIcon( "src/vue/coeur.jpg"); // Tu créer ton objet ImageIcon comme tu veux
-		image4 = new ImageIcon(image4.getImage().getScaledInstance(50, 50, java.awt.Image.SCALE_SMOOTH));
-		JLest4.setText(null);
-		JLest4.setIcon(image2);
-		
-		
-		
-		
-		
-		pan3.add(JLest);
-		pan3.add(JLest2);
-		pan3.add(JLest3);
-		pan3.add(JLest4);
-		//Sud
-		
-		
-		pan2 = new JPanel();
-		pan2.setPreferredSize(new Dimension(960, 110));
-		JL = new JButton("proposition");
-		JL.setPreferredSize(new Dimension(230, 100));
-		JL.setBorder(loweredetched);
-		JL2 = new JButton("proposition");
-		JL2.setPreferredSize(new Dimension(230, 100));
-		JL2.setBorder(loweredetched);
-		JL3 = new JButton("proposition");
-		JL3.setPreferredSize(new Dimension(230, 100));
-		JL3.setBorder(loweredetched);
-		JL4 = new JButton("proposition");
-		JL4.setPreferredSize(new Dimension(230, 100));
-		JL4.setBorder(loweredetched);
-		JL4.setName("bob");
-		System.out.println(JL4.getName());
-		pan2.add(JL);
-		pan2.add(JL2);
-		pan2.add(JL3);
-		pan2.add(JL4);
-		
-		pan4 = new JPanel();
-		pan4.setPreferredSize(new Dimension(1000, 550));
-		//On positionne maintenant ces trois lignes en colonne
-		pan4.add(pan1);
-		pan4.add(pan3);
-		pan4.add(pan2);
-		
-		//ecoute des menus
-		//relancer le jeux
+
+
+
 		item1.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
@@ -199,9 +95,9 @@ public class fenetre extends JFrame{
 			}
 		});
 		
-		this.getContentPane().add(pan4);
+                this.chargementQuestion();
 		this.setVisible(true);
-                this.iterate();
+            //    this.iterate();
 	}
 	
 	
@@ -233,15 +129,47 @@ public class fenetre extends JFrame{
 //TODO Supprime une vie int Vie-- 
         }
 	
-	
-	
-	public void receptionClickBoutton(/*event e*/){
-		//Modifier true avec le nom du boutton qui contient 1 ou 0
-		if(control.receptionResultat(true)){
-			this.affichageQuestion();
-		}
-		else{
-			this.supprimeVie();
-		}
-	}
+
+        
+            private void chargementQuestion() {
+            //Creation des nouveau panel
+            pan2 = new JPanel();
+            pan1 = new JPanel();
+            
+            //Chargement des proposition
+            Question q;
+            q = control.getQuestion();
+            int e= q.getNbProposition();
+           for(int i=0;i<e;i++){
+               Proposition p = q.getListeProposition().get(i);
+               JButton b = new JButton(p.getTexte());
+                b.addActionListener((ActionListener) this);
+               pan2.add(b);
+           }
+            this.add(pan2,BorderLayout.PAGE_END);
+            
+            
+          
+		//charchement question
+            BtnN1 = new JLabel(q.getTexte());
+		BtnN1.setPreferredSize(new Dimension(100, 100));
+                pan1.add(BtnN1);
+		this.add(pan1,BorderLayout.CENTER);
+                
+            }
+
+            
+             public void actionPerformed(ActionEvent e) {
+                  JButton button = (JButton) e.getSource();
+                 String command = button.getActionCommand();
+                 System.out.println(command);
+                 if(control.receptionResultat(command)){
+                     this.chargementQuestion();
+                 }
+                 else{
+                     //enleve vie
+                     System.out.println("aie");
+                 }
+        }
+
 }
