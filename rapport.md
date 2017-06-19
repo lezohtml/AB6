@@ -6,23 +6,25 @@
 Le jeu que nous avions pour but de développer vise les enfants de 4 à 11 ans. Soit de la maternelle à la classe de sixième. Nous devions alors prévoir des questions pour les différents niveaux. Le but était de faire travailler les leçons apprises en classe à la maison de façon ludique, sous forme d'un jeu. Nous avons dès le début de la mise en place du projet, oublier les points, comme est actuellement le cas dans les programmes de l'Éducation Nationale. Nous avons décidé de mettre en place un système de "vies" comme il existe déjà dans les jeux actuels comme Mario, Crash, ... Une mauvaise réponse entraine la perte d'une "vie". L'enfant dispose d'un nombre de 10 vies lors du lancement de la partie.  
 Il dispose aussi d'un nombre de temps limité pour répondre à chaque question. Ce temps est différent en fonction du niveau/classe de l'enfant. Un élève de CP a 20 secondes pour répondre à la question tandis qu'un élève de CM2 ne dispose que de 10 secondes. Bien sûr ce temps est modifiable dans le fichier XML qui contient les niveaux (§niveaux). 
 
-
-### Choix du Java 
-Je vous laisse faire ici !!!!
-
 ### Modulable :
-Changement des questions / niveaux / temps 
+Le jeu est complètement modulable et peut être adapté à tout type de questions ou de niveaux. Le professeur ou le parent peut ajouter des questions qui sont propres au niveau de l'enfant, au programme scolaire ou les outils étudiés.
+Ils peuvent aussi à tout moment rajouter un niveau intermediaire ou rajouter une classe (la 6ème par exemple).
+Le temps peut aussi varier, si des questions sont plus difficiles ou si elles demandent plus de lecture ou d'analyse.
+Ces modifications peuvent être apportées facilement grace au fichier XML qui contient les niveaux, questions ainsi que leurs paramètres. 
 
 ## Mise en place du projet 
 
 ### Choix des technologies, moteur :
+
+### Choix du Java 
+Je vous laisse faire ici !!!!
 
 ### Répartition des tâches :
 Il faut ton Gantt ici Nono
 
 ### Outils de contribution :
 
-- Git : Git est un outil de versioning qui permet de travailler à plusieurs au développement d'une application.
+- Git : Git est un outil de versioning qui permet de travailler à plusieurs au développement d'une application. il permet aussi de créer des versions ou des branches. Nous avons utilisé cet outils car il est conçu pour la contribution de code source. Il permet aussi de suivre l'etat d'avancement d'un projet car chaque modification (commit) contient un titre qui permet de savoir ce qui a été apporté à l'application.
 
 - Communication : Chat (pour ne pas nommer Facebook)
 
