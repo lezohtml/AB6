@@ -23,8 +23,7 @@ Le choix du Java c'est fait suite à 3 raisons:
 - Le Java était le choix le plus résonable selon les connaissances de l'équipe qui avait tous rencontré et codé dans ce language dans le cours de leurs études.
 
 ### Répartition des tâches :
-Il faut ton Gantt ici Nono
-
+![Alt text](AB6/18982923_1880353625550067_85301318_n.png "Diagramme Gantt)
 ### Outils de contribution :
 
 - Git : Git est un outil de versioning qui permet de travailler à plusieurs au développement d'une application. il permet aussi de créer des versions ou des branches. Nous avons utilisé cet outils car il est conçu pour la contribution de code source. Il permet aussi de suivre l'etat d'avancement d'un projet car chaque modification (commit) contient un titre qui permet de savoir ce qui a été apporté à l'application.
