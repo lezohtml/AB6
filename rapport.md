@@ -17,7 +17,10 @@ Ces modifications peuvent être apportées facilement grace au fichier XML qui c
 ### Choix des technologies, moteur :
 
 ### Choix du Java 
-Je vous laisse faire ici !!!!
+Le choix du Java c'est fait suite à 3 raisons:
+- La demande du client qui nous a indiquer que le java serait le choix le plus cohérent dans ce type de projet
+- La similarité d'un projet réaliser quelque semaine avant et donc nous qui nous aurait permit de solidifier les notions acquise dans la réalisation de celui-ci.
+- Le Java était le choix le plus résonable selon les connaissances de l'équipe qui avait tous rencontré et codé dans ce language dans le cours de leurs études.
 
 ### Répartition des tâches :
 Il faut ton Gantt ici Nono
@@ -55,30 +58,40 @@ La balise *<Proposition>* contient une proposition
 Les questions ainsi que les niveaux peuvent tout aussi bien être rentrées dans une base de données ...
 
 ### La lecture du fichier XML
+La lecture du fichier XML est faite de façon manuelle, la sérialization des donées contenues dans le fichier XML sont converties en tant que classe qui respecte la nomination qui leurs est associées dans le fichier. Un Arraylist est initialisé dans la classe **Niveau** et **Question** qui contient respectivement une liste de Question et un liste de Propostion. 
 
+Lors du lancé du programme le controlleur peut prendre un commentaire la difficulté choisit par l'enfant ou l'enseignant ( cf Evolution du jeu ), ici le niveau spécifié par default est "CP". Ainsi lors de chargement du modèle le parser va choisir la balise niveau ayant le nom "CP" et va charger le niveau, les questions et leurs propositions.
+
+Ce modele permet donc, juste en possédant la classe niveau initialisé, d'aller chercher chaque questions ainsi que toutes leurs propostions.
 ### Le design 
-Le design est composé de 4 JPanel:
-  - Un pour le nord
+Le design est composé de 3 panneaux principaux:
+  - Un pour l'est
   - Un pour le centre
   - Un pour le sud
-  - Un qui transforme
     
 Le JPanel du Nord contiendra un JLabel pour la question.
-Au milieu le JPanel contiendra la progresse bar avec le temps laisser à l’enfant pour répondre, et qui contient  plusieurs JLabel qui permettront de voir le nombre de vies restantes.
-Le JPanel au Sud contiendra  4 JButton qui sont les plusieurs propositions de réponse, une seule est correcte.
-Le dernier JPanel permettra de disposer c’est ligne en colonne.
+A l'est le JPanel contiendra la progresse bar avec le temps laisser à l’enfant pour répondre, et qui contient  plusieurs JLabel qui permettront de voir le nombre de vies restantes.
+Le JPanel au Sud contiendra  un nombre dynamique de JButton qui sont les plusieurs propositions de réponse, une seule est correcte.
 
 
 ## L'évolution :
 
+
+### Evolution du jeu
+#### Le Design
 La question qui tombe style Tetris (enlève le timer)
   - Le sujet imposait un *style Tetris*, les questions doivent "tomber" et l'élève doit répondre avant que la *brique* n'arrive en bas de la zone. 
-  - Design --> Pour l’instant nous avons fait une progress bar avec un système de vie, dans le futur il faudrait changer cela  pour faire tomber des petits objets qui s’imbriquent (tétris), le temps qui permet à l’objet de descendre pourrait être proportionnelle au niveau de l’enfant.
+  - Pour l’instant nous avons fait une progress bar avec un système de vie, dans le futur il faudrait changer cela  pour faire tomber des petits objets qui s’imbriquent (tétris), le temps qui permet à l’objet de descendre pourrait être proportionnelle au niveau de l’enfant.
+  #### Le Jeu
   - Niveau de l’enfant --> dans les progressions nous pensions pouvoir mettre en place un système de niveau, une petite fenêtre s’ouvrirait au lancement de l’application et l’enfant choisirait son niveau, et en fonction de cela, grâce à une propriété mise dans le xml, nous chargerions les questions en fonction du niveau. Si l’enfant veut changer de niveau par la suite, un choix sera possible dans le menu du haut.
-  - Difficulté --> Si l’enfant retombe sur une même question où il s’est déjà trompé, alors le timer devient un peu plus long pour laisser à l’enfant plus de temps, ou alors, en fonction du souhait  du supérieur, un choix de réponse rétrécie.
+  - Difficulté --> Si l’enfant retombe sur une même question où il s’est déjà trompé, alors le timer devient un peu plus long pour laisser à l’enfant plus de temps, ou alors, en fonction du souhait  du supérieur, un choix de réponse rétrécie. Dans le même genre si une question pose problème à un enfant, certaine propostion pourrait disparaitre.
   - Système de vie --> en fonction du niveau l’enfant peu commencé avec plus ou moins de vie au départ.
+   - Le Temps --> Choix pour l'enseignant ou l'enfant d'ajouter un malus ou un bonus de temps. Ceci pourrait être intéressant pour les enfants necessitant un tier temps ou des enfants qui souhaite avoir plus de challenge ou son en avance par rapport à leur niveau.
+ ### Evolution du code
+  #### Le Modèle
   - Contribuer avec des enseignants de tous les niveaux afin de proposer un grand nombre de questions adaptées au niveau de l'élève. Cela nous permet aussi de suivre les programmes officiels de l'Éducation Nationale. Cela peut passer par le système Git afin que chacun puisse publier sous licence libre ses questions. L'enseignant peut aussi créer des questions en rapport avec son programme et ne pas en faire part à la communauté. 
   - Système d'ajout de questions dans le fichier *questions.xml* avec interface graphique pour faciliter l'ajout. Notre système actuel utilise un système simple d'ajout de questions via le fichier XML qui a un format adapté et facile à la compréhension. Cependant, la tâche peut être difficile pour une personne non expérimentée et une simple erreur de balise ou de formatage peut bloquer la lecture du fichier par AB6.
+  - Système de sauvegarde simple ou l'enfant rentre son nom dès le debut 
   
 
 
