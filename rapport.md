@@ -93,4 +93,8 @@ La question qui tombe style Tetris (enlève le timer)
   - Système de sauvegarde simple ou l'enfant rentre son nom dès le debut 
   
 
+# CONCLUSION :
+Pour terminer, nous pensons que le projet nécessite encore beaucoup d'améliorations. Bien sur le jeu doit suivre l'objectif initial qui est de fournir un jeu éducatif. Des éléments de design doivent encore être ajoutés, ainsi qu'un menu.
+Le choix du Java nous a permis de mettre en application ce que nous avons appris en classe et d'avoir tous les trois une base commune dans le développement avec ce langage.
+Ce projet nous a aussi beaucoup apporté dans le travail en équipe. Nous avons dûe répartir les tâches en fonction des compétences de chacun, mettre en place des outils utilisables par l'ensemble du groupe comme Git par exemple.
 
