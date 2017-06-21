@@ -21,7 +21,7 @@ Le choix du Java c'est fait suite à 3 raisons:
 - La demande du client qui nous a indiquer que le java serait le choix le plus cohérent dans ce type de projet
 - La similarité d'un projet réaliser quelque semaine avant et donc nous qui nous aurait permit de solidifier les notions acquise dans la réalisation de celui-ci.
 - Le Java était le choix le plus résonable selon les connaissances de l'équipe qui avait tous rencontré et codé dans ce language dans le cours de leurs études.
-
+- Il nous permit d'appliquer de façon simple le patron de conception MVC, où ici, le modèle est un fichier XML.
 ### Répartition des tâches :
 ![Diagramme Gantt](https://github.com/lezohtml/AB6/blob/master/18982923_1880353625550067_85301318_n.png)
 ### Outils de contribution :
